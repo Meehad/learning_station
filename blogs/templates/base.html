@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Learning Station{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <a href="home.html"><img src="{% static 'images/white_logo.png' %}" width="500px" height="100px" class="logo" alt="Coding Club"></a>
+        <nav class="nvb">
+            <ul class="nvbl">
+                <li><a href="home.html" class="nvbk">Home</a></li>
+                <li><a href="mulern.html" class="nvbk">Mulearn</a></li>
+                <li><a href="cc.html" class="nvbk">Coding_club</a></li>
+                <li><a href="domains.html" class="nvbk">Domains</a></li>
+                <li><a href="feedback.html" class="nvbk">feedback</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-nav-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </div>
+{% block content %}
+
+{% endblock %}
+<div id="footer">
+    <div>
+        <div class="connect">
+            <a href="https://www.instagram.com/p/Cuele1eN_tO/?igshid=NjFiZTE0ZDQ0ZQ==" class="instagram"></a>
+            <a href="https://chat.whatsapp.com/BiAG5BFSrrMJRQfhcG90QC" class="whatsapp"></a>
+        </div>
+        <p>&copy; 2023 AJAS CodinG_CluB. All Rights Reserved.</p>
+    </div>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="{% static 'js/mobile.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="feed">
+<h1>Under construction</h1>
+<p style="font-size: large;">meanwhile please share your valuable feebacks with our CO-lead shabeeb</p>
+</div>
+<h1 class="how">Feedback</h1>
+    <div>
+            <div>
+                <img src="{% static 'images/check-in.png' %}" alt="">
+                <h1>UNIT 0123 , ABC BUILDING, BUSSINESS PARK</h1>
+                <p>If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.</p>
+            </div>
+        </div>
+    <div class="footer">
+        <div class="contact">
+            <h1>Get in touch - {{ Name }}</h1>
+            <form action="#">
+                {% csrf_token %}
+                <input type="text" name="Name" value="Name" onblur="this.value=!this.value?'Name':this.value;" onfocus="this.select()" onclick="this.value='';">
+                <input type="text" name="Email" value="Email" onblur="this.value=!this.value?'Email':this.value;" onfocus="this.select()" onclick="this.value='';">
+                <input type="text" name="Subject" value="Subject" onblur="this.value=!this.value?'Subject':this.value;" onfocus="this.select()" onclick="this.value='';">
+                <textarea name="meassage" cols="50" rows="7" placeholder="Share your thoughts"></textarea>
+                <input type="submit" value="Send" id="submit">
+            </form>
+        </div>
+        <div class="section">
+            <h1>WE’D LOVE TO HEAR FROM YOU.</h1>
+            <p>If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

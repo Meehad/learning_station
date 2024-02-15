@@ -1,0 +1,41 @@
+from django.shortcuts import render
+
+# Create your views here.
+def home(request):
+	return render(request,'home.html',{})
+def mulern(request):
+	return render(request,'mulern.html',{})
+def cc(request):
+	return render(request,'cc.html',{})
+def domains(request):
+	return render(request,'domains.html',{})
+def feedback(request):
+	return render(request,'feedback.html',{})
+def wd(request):
+	return render(request,'wd.html',{})
+def md(request):
+	return render(request,'md.html',{})
+def mark(request):
+	return render(request,'mark.html',{})
+def blc(request):
+	return render(request,'blc.html',{})
+def aidv(request):
+	return render(request,'aidv.html',{})
+def ar(request):
+	return render(request,'ar.html',{})
+def csec(request):
+	return render(request,'csec.html',{})
+def pm(request):
+	return render(request,'pm.html',{})
+def uix(request):
+	return render(request,'uix.html',{})
+def gd(request):
+	return render(request,'gd.html',{})
+def lno(request):
+	return render(request,'lno.html',{})
+def iot(request):
+	return render(request,'iot.html',{})
+def devops(request):
+	return render(request,'devops.html',{})
+def flut(request):
+	return render(request,'flut.html',{})

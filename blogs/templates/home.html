@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="body" class="home">
+    <div class="head">
+	<h1 class="what">Today's Event</h1>
+    <img src="{% static 'images/lsposter.jpg' %}" alt="">
+    <p class="ans">Today's event is an learning station conducted by Mulearn AJAS to give idea of different domains in tech field.<br>
+    To know more about Mulearn or AJAS coding club navigate to respective options in navbar</p>
+    </div>
+    <div class="help">
+        <br>
+    <h1 class="what">Upcoming events</h1>
+    <p class="ans">C programming bootcamp <br>Dart programming bootcamp <br>Python programming bootcamp</p>
+        <br>
+	<h1 class="what">How to navigate through website?</h1>
+    <p class="ans">Go to domains in navbar and click on the domain<br>you want to know about</p>
+    </div>
+</div>
+{% endblock %}

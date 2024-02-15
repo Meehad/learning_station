@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Domains{% endblock %}
+
+{% block content %}
+<div class="domains">
+    <a href="md.html" ><img src="{% static 'images/mobiledev.png' %}" alt="Mobile app development"></a>
+    <a href="wd.html" ><img src="{% static 'images/webdev.jpeg' %}"  alt="WEB development"></a>
+    <a href="mark.html" ><img src="{% static 'images/marketing.png' %}" alt="Marketing"></a>
+    <a href="blc.html" ><img src="{% static 'images/blockchain.png' %}" alt="Blockchain"></a>
+    <a href="pm.html" ><img src="{% static 'images/pm.png' %}" alt="Product management"></a>
+    <a href="gd.html" ><img src="{% static 'images/gamedev.png' %}" alt="Game development"></a>
+    <a href="csec.html" ><img src="{% static 'images/csec.png' %}" alt="Cyber Security"></a>
+    <a href="aidv.html" ><img src="{% static 'images/aidev.png' %}" alt="AI development"></a>
+    <a href="uix.html" ><img src="{% static 'images/uix.png' %}" alt="UI/UX development"></a>
+    <a href="ar.html" ><img src="{% static 'images/reality.png' %}"  alt="AR/VR/MR development"></a>
+    <a href="lno.html" ><img src="{% static 'images/lcode.png' %}"  alt="No/Low Code"></a>
+    <a href="iot.html" ><img src="{% static 'images/iot.png' %}"  alt="IoT development"></a>
+    <a href="devops.html" ><img src="{% static 'images/dops.png' %}"  alt="DevOps"></a>
+    <a href="flut.html" ><img src="{% static 'images/flut.png' %}"  alt="Flutter development"></a>
+</div>
+{% endblock %}
